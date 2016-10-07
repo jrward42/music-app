@@ -1,0 +1,13 @@
+<form class="" action="/tracks" method="post">
+  <%= auth_token %>
+  <label for="album_title"> Album Name</label> <br>
+  <input type="text" name="album_title" value=""><br>
+  <label for="album_name"> Track Title </label><br>
+  <input type="text" name="track[title]" value=""><br>
+  <label for="live_album"> Is is a bonus track? </label><br>
+  <input type="radio" name="track[bonus]" value="true"> Yes <br>
+  <input type="radio" name="track[bonus]" value="false"> No <br>
+  <label for="track_lyrics">Lyrics</label><br>
+  <textarea id="track_lyrics" name = "track[lyrics]"> </textarea> <br>
+  <button type="submit" name="button"> Create Track </button>
+</form>

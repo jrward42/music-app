@@ -1,0 +1,11 @@
+<form class="" action="/albums" method="post">
+  <%= auth_token %>
+  <label for="band_name"> Band Name</label> <br>
+  <input type="text" name="band_name" value=""> <br>
+  <label for="album_name"> Album Title </label> <br>
+  <input type="text" name="album[title]" value=""><br>
+  <label for="live_album"> Is is a live album? </label> <br>
+  <input type="radio" name="album[live]" value="true"> Yes <br>
+  <input type="radio" name="album[live]" value="false"> No <br>
+  <button type="submit" name="button"> Create Album </button> <br> 
+</form>
